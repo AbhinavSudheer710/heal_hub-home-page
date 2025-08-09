@@ -16,7 +16,7 @@ body{
     height: 63px;
     
 }
-
+/* navbar */
 .top li{
     display: inline-block;
     
@@ -64,3 +64,56 @@ li a{
    background-color: rgb(83, 83, 202);
 }
 
+.main-container{
+    margin: 0px 5%;
+}
+.main-container h1{
+    font-family: sans-serif;
+    font-weight:bold ;
+    color: black;
+    font-size: 54px;
+}
+.main-container h1 span{
+    color:  rgb(42, 59, 150);
+}
+.main-container p{
+    color: black;
+    padding: 30px 0px;
+    font-size: large;
+    font-weight: 400;
+}
+#button{
+    color: white;
+    background: rgb(42, 59, 150);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 70px;
+    font-size: smaller;
+    transition: 0.4s ease;
+}
+#button:hover{
+       background-color: rgb(83, 83, 202);
+
+}
+.dna-bg-container{
+    background-image: url(../images/dna\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 900px auto;
+}
+
+/* blue rectangle */
+.blue-rec{
+    background-color: rgb(42, 59, 150);
+    color: white;
+    display: flex;
+    justify-content: start;
+}
+.blue-rec-content{
+    padding: 10px 50px;
+    text-align: center;
+    margin-left: 70px;
+}
+.blue-rec-content h1,p{
+    margin: 0px;
+    padding: 0px;
+}
