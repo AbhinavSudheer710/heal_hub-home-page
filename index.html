@@ -10,10 +10,10 @@
 <body>
     <div class="top d-flex">
         <img id="logo" src="images/Frame (1).png" alt="">
-        <nav>
+        <nav class="EWP">
             <ul>
                 <li >
-                    <div class="row">
+                    <div class="row" >
                         <div class="col firstcol d-flex justify-content-end" style="margin: auto;">
                             <img src="images/phone.png" alt="">
                         </div>
@@ -53,7 +53,7 @@
     </div>
 
     <!-- navbar starts here -->
-<div class="navbar1">
+<!-- <div class="navbar1">
     <nav>
         <ul >
             <li class="list_links">
@@ -80,20 +80,69 @@
   <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
 </svg></div>
         
-</div>
+</div> -->
+
+<nav class="navbar navbar-expand-xl "   >
+  <div class="container-fluid">
+    <button style="margin-left: 20px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="list_links" id="home-logo">
+          <a class="" aria-current="page" href="#"><img src="images/home.png" alt=""></a>
+        </li>
+        <li class="list_links">
+          <a  href="#">AboutUs</a>
+        </li>
+        <li class="list_links">
+          <a href="#">Services</a>
+        </li>
+        <li class="list_links">
+          <a href="#">Doctors</a>
+        </li>
+        <li class="list_links">
+          <a href="#">News</a>
+        </li>
+        <li class="list_links">
+          <a href="#">Contact</a>
+        </li>
+       
+      </ul>
+
+      <form class="d-flex justify-content-between" role="search">
+        <input id="search-textbox" class="form-control " type="search" placeholder="Search" aria-label="Search"/>
+        <button id="apt-btn" class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <div id="profile" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        </svg>
+      </div>
+      <hr>
+    </div>
+    
+  </div>
+  
+</nav>
+
 <!-- navbar ends here -->
 
 <!-- main starts here -->
-<div class="main-container d-flex justify-content-between">
+<div class="main-container">
     <div class="dna-bg-container">
-        <div class="dna-content" style="margin-top: 180px;">
+        <div class="dna-content" >
         <h1>Expert <span>Healthcare</span> at your <br>fingertips!</h1>
         <p>Book appointments anytime, anywhere - online or in- <br>person, connect with trusted doctors in just a few taps. Quick, <br>easy, and tailored to your schedule.</p>
         <div><button id="button">Make Appointment</button></div>
         </div>
     </div>
-    <div class="doctor-container d-flex" style="justify-content: end;">
-        <img style="width: 70%;" src="images/docflip.png" alt="">
+    <div class="doctor-container">
+        <img id="doc-img" src="images/docflip.png" alt="">
     </div>
 </div>
 <!-- main ends here -->

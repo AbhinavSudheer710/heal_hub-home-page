@@ -12,7 +12,7 @@ body{
     flex-wrap: nowrap;
 }
 #logo{
-    padding: 0px 40px;
+    
     height: 63px;
     
 }
@@ -24,32 +24,55 @@ body{
     width: 300px;
     
 }
+
+.top .row{
+    margin-bottom: 5px;
+}
+
 .firstcol{
     margin: auto;
 }
-
-.navbar1{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
+@media (max-width:576px){
+    .EWP{
+        display: none;
+    }
 }
+
+/* navbar starts here */
+.navbar{
+    margin: 0px 5%;
+}
+#home-logo{
+    margin-top: 8px;
+}
+
 
 li a{
     text-decoration: none;
 }
 
 .list_links{
-    display: inline-block;
+    display: inline;
     list-style: none;
+    margin-top: 13px;
+    margin-right: 10px;
+    transition: 1s;
+    
 }
+
+
 .list_links a{
+    /* border: solid green 1px; */
     color: black;
     padding: 0px 20px;
+    
 }
 
 #search-textbox{
     border: solid rgb(42, 59, 150) 2px;
     border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 13px;
 }
 #apt-btn{
     color: white;
@@ -59,13 +82,30 @@ li a{
     padding: 7px 30px;
     font-size: smaller;
     transition: 0.4s ease;
+    margin-left: 20px;
+    margin-top: 13px;
 }
 #apt-btn:hover{
    background-color: rgb(83, 83, 202);
 }
 
+#profile{
+    margin-left: 100px;
+}
+
+@media (max-width:1200px){
+    #profile{
+        margin-left: 20px;
+        margin-top: 13px;
+    }
+}
+
+/* main area */
+
 .main-container{
     margin: 0px 5%;
+    display: flex;
+    justify-content: space-between;
 }
 .main-container h1{
     font-family: sans-serif;
@@ -99,7 +139,46 @@ li a{
     background-image: url(../images/dna\ 1.png);
     background-repeat: no-repeat;
     background-size: 900px auto;
+    max-width: 900px;
+    margin-bottom: 30px;
 }
+.dna-content{
+    margin-top: 180px;
+}
+
+.doctor-container{
+    display: flex;
+    justify-content: end;
+}
+#doc-img{
+    width:80%;
+    height: auto;
+}
+
+@media (max-width:1200px){
+    
+    .dna-content{
+        margin-top: 70px;
+        
+    }
+   
+}
+@media (max-width:1100px){
+    .doctor-container{
+       display: none;
+        
+    }
+    .main-container{
+        justify-content: center;
+    }
+    .dna-bg-container{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+
 
 /* blue rectangle */
 .blue-rec{
@@ -109,11 +188,22 @@ li a{
     justify-content: start;
 }
 .blue-rec-content{
-    padding: 10px 50px;
+    padding: 10px 30px;
     text-align: center;
     margin-left: 70px;
 }
 .blue-rec-content h1,p{
     margin: 0px;
     padding: 0px;
+}
+
+@media (max-width:768px){
+    .blue-rec-content{
+        margin-left: 40px;
+    }
+}
+@media (max-width:576px){
+    .blue-rec-content{
+        margin-left: 20px;
+    }
 }
